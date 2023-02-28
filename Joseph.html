@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Joseph</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="Joseph.css"> 
+</head>
+<body>
+
+<div class="sidenav">
+  <br>
+  <br>
+  <br>
+  <li>___________________________</li>
+  <a href="#">Home</a>
+  <a href="BasicMap.html" target= "_blank">Google map</a>
+  <a href="Project%20X.html" target= "_blank">Project X</a>
+  <li>___________________________</li>
+</div>
+
+
+<div class="content">
+<img src="https://scontent.fykz1-2.fna.fbcdn.net/v/t31.18172-8/13442455_1270313099665278_5139119370659935683_o.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=47tC02xs74AAX-wZPtA&_nc_ht=scontent.fykz1-2.fna&oh=00_AT_msDtAvyubX2VeI2lStumvfjIgt6Jd5qQCG7rwDGItTg&oe=62186B40" width= "380" Height= " 400" alt="My photo" style= "margin-top: 20px;" class="center" >
+
+  <h1> Derick Joseph </h1>
+  
+  
+  <p>Civil Engineer by profession. Graduated from Saintgits College of Engineering, Kottayam, India. Hard working and quick learner.Interested in learning new technologies and its implementation to manage projects more efficiently. 
+Passion for latest technologies have led to pursue Geographic Information Systems from Fanshawe College, Ontario.
+</p>
+<p> The program helped gain the ability to analyse real-world GIS data sets to compute descriptive and inferential geographical
+statistics. Proficient in GIS tools such as ArcGIS Pro, C#, SQL and Microsoft office to execute projects.<br>Favourite Websites: <a href="https://techcrunch.com/">TechCrunch</a> , <a href="https://www.theverge.com/">The Verge</a>
+</p>
+<p><br>****<br></p>
+<h2>MAP</h2>
+<p><br>****<br></p>
+<div id="intromap"></div>
+</div>
+
+
+<script>
+      var map;
+      function initMap() {
+        
+		map = new google.maps.Map(document.getElementById('intromap'), {
+          center: {lat:  45.955574, lng: -80.853939},
+          zoom: 11
+        });
+        
+        var myLatLng = {lat:  46.017584, lng: -80.811701};
+        var Island = {lat:  45.886233, lng: -80.905025};
+        
+        
+    var marker = new google.maps.Marker({
+    position: Island,
+    draggable: true,
+    map: map,
+    title: 'Acme!'
+    });  
+  
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX6haxPnf_GlOOJLMl4XX-_y9id7NBzh8&callback=initMap"
+    async defer></script>
+
+</body>
+
+
+</html>
