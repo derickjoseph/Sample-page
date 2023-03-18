@@ -1,190 +1,47 @@
+
 <!DOCTYPE html>
 <html style="height: 100%;width:100%;">
   <head>
-    <title>My Map</title>
+    <title>Simple Map</title>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
     <link rel="stylesheet" href="Joseph.css"> 
     
   </head>
   <body style="height: 100%;width:100%;">
-  <div >
-    <div id="map"></div>
-  </div>  
-	<script>
+    <div id="map" style="height: 50%;width:100%;"></div>
+    <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat:  18.0735, lng: -15.9582}, mapTypeId: 'satellite',
-          zoom: 4
+          center: {lat:  45.955574, lng: -80.853939},
+          zoom: 11
         });
         
-        var Capital = {lat:  18.0735, lng: -15.9582};
-        var Airport = {lat:  18.3091, lng: -15.9628};
-		var Jail = {lat:  18.1354, lng: -15.9041};
-		var Parliment = {lat: 18.0865,lng: -15.9722};
-		var Port = {lat:  20.9131,lng: -17.0424};
-		var Hospital = {lat:  20.9426,lng: -17.0362};
-		var School = {lat:  18.0688,lng: -15.9504};
-		var Mosque = {lat:  18.3091, lng: -15.9628};
-		var Stadium = {lat:  18.1053,lng:  -15.9848};
-		var Market = {lat: 18.0530,lng:  -15.9407};
-		var Military = {lat: 18.0840,lng: -15.9662};
-		var West = {lat: 20.8334,lng: -17.0675};
-		var North = {lat: 27.3159,lng:  -8.6676};
-		var South = {lat:  14.7223,lng: -12.0566};
-		var East = {lat:  25.0000,lng:  -4.8333};
-			
+        var myLatLng = {lat:  46.017584, lng: -80.811701};
+        var Island = {lat:  45.886233, lng: -80.905025};
+        
         
     var marker = new google.maps.Marker({
-    position: Capital,
+    position: Island,
     draggable: true,
     map: map,
-    title: 'Nouakchott'
+    title: 'Acme!'
     });
     var marker2 = new google.maps.Marker({
-    position: Airport,
+    position: myLatLng,
      draggable: true,
     animation: google.maps.Animation.DROP,
     map: map,
-    title: 'Nouakchott International Airport'
-	});
+    title: 'Not Acme1'
     
-	var marker3 = new google.maps.Marker({
-    position: Jail,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'MAISON DARRÉT DE DAR-NAIM JAIL '
 
-    });
-	
-	var marker4 = new google.maps.Marker({
-    position: Parliment,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'Parliment Building '
-
-    });
-	
-	var marker5 = new google.maps.Marker({
-    position: Port,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'Port Artisanal'
-
-    });
-	
-	var marker6 = new google.maps.Marker({
-    position: Hospital,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'Hospital Center De Nouadhibou'
-
-    });
-	
-	var marker7= new google.maps.Marker({
-    position: School,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'Public Primary School'
-
-    });
-	
-	var marker8= new google.maps.Marker({
-    position: Mosque,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'Mosqué Saudique'
-
-    });
-	
-	var marker9= new google.maps.Marker({
-    position: Market,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'Market Bashiri'
-
-    });
-	
-	var marker10= new google.maps.Marker({
-    position: Military,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'Military Headquarters Complex'
-
-    });
-	
-	var marker11= new google.maps.Marker({
-    position: West,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'West Extent'
-    });
-	
-	var marker12= new google.maps.Marker({
-    position: North,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'North Extent'
-
-    });
-	
-	var marker13= new google.maps.Marker({
-    position: South,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'South Extent'
-
-    });
-	
-	var marker14= new google.maps.Marker({
-    position: East,
-     draggable: true,
-    animation: google.maps.Animation.DROP,
-    map: map,
-    title: 'East Extent'
-
-    });
+  });
 
   
   
-   }
-    </script><br>
-	<div>
-	
-	  <a href="Joseph.html">Home</a>
-	  <a href="#">Google map</a>
-	  <a href="Project%20X.html" target= "_blank">Project X</a>
-	</div>  
-	<div id="CountryName">
-	   <h2><u>Case Study : Mauritania</u></h2>
-	   <p>Mauritania, officially the Islamic Republic of Mauritania is a sovereign state in Northwest Africa. 
-	   It is bordered by the Atlantic Ocean to the west, Western Sahara to the north and northwest, Algeria to the northeast, Mali to the east and southeast, and Senegal to the southwest.
-	   Mauritania is the eleventh largest country in Africa, and 90 percent of its territory is situated in the Sahara. Most of its population of 4.4 million lives in the temperate south of the country,
-	   with roughly one third concentrated in the capital and largest city, Nouakchott, located on the Atlantic coast.</p>
-	   <p>The country's name derives from the ancient Berber kingdom of Mauretania, located in present-day Morocco and Algeria. 
-        Berbers occupied what is now Mauritania beginning in the third century AD. Arabs conquered the area in the eighth century, bringing Islam, Arab culture, and the Arabic language.
-        In the early 20th century, Mauritania was colonized by France as part of French West Africa. It achieved independence in 1960, but has since experienced recurrent coups and periods of military dictatorship.
-        The most recent coup, in 2008, was led by General Mohamed Ould Abdel Aziz, who won subsequent presidential elections in 2009 and 2014. He was succeeded by Mohamed Ould Ghazouani following the 2019 elections,
-        which were considered Mauritania's first peaceful transition of power since independence. </p>
-		<p>
-		<ul>
-		<li><small><em> Reference:<a href="https://en.wikipedia.org/wiki/Mauritania">Visit Wikipedia page.</a></small> </em>
-		<li><a href="http://www.mauritania.mr/fr/index.php">Visit Mauritania Official page.</a></li>
-		</ul>
-		</p>
-	</div>
+      }
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAX6haxPnf_GlOOJLMl4XX-_y9id7NBzh8&callback=initMap"
     async defer></script>
   </body>
